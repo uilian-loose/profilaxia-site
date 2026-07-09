@@ -1,0 +1,538 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="./assets/favicon.png">
+<title>Profilaxia Jurídica · Cirurgia Vascular — Termos de Consentimento</title>
+<style>
+:root {
+  --paper:#FAF8F4; --surface:#FFFFFF; --ink:#21333F; --ink-2:#2C4150;
+  --soft:#5A6570; --line:#E7E4DC; --line-2:#EEEBE3;
+  --gold:#A16C32; --gold-soft:#C49A66; --sage:#C1C3BA;
+  --hero-ink:#F3EFE6; --hero-soft:#B9C2C0; --hero-bg:#21333F; --hero-bg2:#1A2830;
+  --shadow: 24px 30px 60px -30px rgba(20,32,40,.35);
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper:#141E24; --surface:#1D2B33; --ink:#EDE9E1; --ink-2:#DCD8CF;
+    --soft:#9EA9AB; --line:#2E3F49; --line-2:#28373F;
+    --gold:#C49A66; --gold-soft:#D8B487; --sage:#8A968F;
+    --hero-ink:#F3EFE6; --hero-soft:#AEB9B8; --hero-bg:#1A2830; --hero-bg2:#101A20;
+    --shadow: 24px 30px 60px -30px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="light"] {
+  --paper:#FAF8F4; --surface:#FFFFFF; --ink:#21333F; --ink-2:#2C4150;
+  --soft:#5A6570; --line:#E7E4DC; --line-2:#EEEBE3;
+  --gold:#A16C32; --gold-soft:#C49A66; --sage:#C1C3BA;
+  --hero-ink:#F3EFE6; --hero-soft:#B9C2C0; --hero-bg:#21333F; --hero-bg2:#1A2830;
+  --shadow: 24px 30px 60px -30px rgba(20,32,40,.35);
+}
+:root[data-theme="dark"] {
+  --paper:#141E24; --surface:#1D2B33; --ink:#EDE9E1; --ink-2:#DCD8CF;
+  --soft:#9EA9AB; --line:#2E3F49; --line-2:#28373F;
+  --gold:#C49A66; --gold-soft:#D8B487; --sage:#8A968F;
+  --hero-ink:#F3EFE6; --hero-soft:#AEB9B8; --hero-bg:#1A2830; --hero-bg2:#101A20;
+  --shadow: 24px 30px 60px -30px rgba(0,0,0,.6);
+}
+
+* { box-sizing:border-box; }
+.wrap {
+  --serif: ui-serif, "New York", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --sans: "Avenir Next", "Avenir", "Helvetica Neue", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+.wrap p { margin:0; }
+.eyebrow {
+  font-size:.72rem; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--gold); font-weight:600; margin:0;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  background:
+    radial-gradient(1100px 500px at 78% -10%, rgba(196,154,102,.16), transparent 60%),
+    linear-gradient(160deg, var(--hero-bg) 0%, var(--hero-bg2) 100%);
+  color:var(--hero-ink);
+  padding: clamp(2.4rem,5vw,4rem) clamp(1.2rem,5vw,3rem) clamp(2.8rem,5vw,3.8rem);
+  position:relative;
+  border-bottom:1px solid rgba(196,154,102,.22);
+}
+.brandbar {
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  max-width:1120px; margin:0 auto 2.4rem;
+}
+.wordmark { display:flex; align-items:center; gap:.8rem; }
+.wordmark .logo { height:38px; width:auto; display:block; flex-shrink:0; }
+.wordmark .rule { width:1px; height:30px; background:rgba(196,154,102,.45); flex-shrink:0; }
+.foot .wordmark .logo { height:32px; }
+.foot .wordmark .rule { height:26px; }
+.wm-txt b { font-family:var(--serif); font-weight:600; font-size:1.02rem; letter-spacing:.02em; display:block; line-height:1.1; }
+.wm-txt span { font-size:.62rem; letter-spacing:.26em; text-transform:uppercase; color:var(--hero-soft); }
+.theme-btn {
+  background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.16); color:var(--hero-ink);
+  width:38px; height:38px; border-radius:50%; cursor:pointer; display:grid; place-items:center;
+  transition:background .2s, transform .2s;
+}
+.theme-btn:hover { background:rgba(255,255,255,.13); }
+.theme-btn svg { width:18px; height:18px; }
+
+.hero-inner { max-width:1120px; margin:0 auto; }
+.hero-eyebrow { color:var(--gold-soft); }
+.hero h1 {
+  font-family:var(--serif); font-weight:600;
+  font-size:clamp(2.1rem,5.4vw,3.7rem); line-height:1.04; letter-spacing:-.01em;
+  margin:.7rem 0 0; text-wrap:balance; max-width:16ch;
+}
+.hero h1 em { font-style:italic; color:var(--gold-soft); }
+.thesis {
+  color:var(--hero-soft); font-size:clamp(1rem,1.6vw,1.18rem);
+  max-width:56ch; margin:1.1rem 0 0;
+}
+.hero-meta {
+  display:flex; flex-wrap:wrap; gap:.5rem 1.6rem; align-items:center;
+  margin-top:1.6rem; color:var(--hero-soft); font-size:.82rem;
+}
+.hero-meta b { color:var(--hero-ink); font-variant-numeric:tabular-nums; }
+.dot { width:4px; height:4px; border-radius:50%; background:var(--gold-soft); }
+
+/* ---------- CONTROLS ---------- */
+.controls {
+  max-width:1120px; margin:0 auto; padding:0 clamp(1.2rem,5vw,3rem);
+  position:sticky; top:0; z-index:20;
+}
+.controls-in {
+  background:color-mix(in srgb, var(--paper) 86%, transparent);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+  padding:1.1rem 0 1rem;
+  display:flex; flex-wrap:wrap; gap:1rem; align-items:center; justify-content:space-between;
+}
+.search {
+  display:flex; align-items:center; gap:.6rem; flex:1 1 320px;
+  background:var(--surface); border:1px solid var(--line);
+  border-radius:999px; padding:.7rem 1.1rem; transition:border-color .2s, box-shadow .2s;
+}
+.search:focus-within { border-color:var(--gold); box-shadow:0 0 0 3px rgba(161,108,50,.14); }
+.search svg { width:19px; height:19px; color:var(--soft); flex-shrink:0; }
+.search input {
+  border:0; outline:0; background:transparent; width:100%; font:inherit; color:var(--ink);
+}
+.search input::placeholder { color:var(--soft); }
+.chips { display:flex; flex-wrap:wrap; gap:.5rem; }
+.chip {
+  font:inherit; font-size:.82rem; cursor:pointer;
+  border:1px solid var(--line); background:var(--surface); color:var(--soft);
+  padding:.5rem .95rem; border-radius:999px; transition:all .18s;
+}
+.chip:hover { color:var(--ink); border-color:var(--gold-soft); }
+.chip.is-active { background:var(--ink); color:var(--paper); border-color:var(--ink); }
+
+/* ---------- GRID ---------- */
+.grid-sec { max-width:1120px; margin:0 auto; padding:2rem clamp(1.2rem,5vw,3rem) 1rem; }
+.count { font-size:.82rem; color:var(--soft); margin:0 0 1.4rem; }
+.count b { color:var(--ink); font-variant-numeric:tabular-nums; }
+.grid {
+  display:grid; gap:1.6rem;
+  grid-template-columns:repeat(auto-fill, minmax(min(100%, 265px), 1fr));
+}
+.card {
+  display:flex; flex-direction:column;
+  background:var(--surface); border:1px solid var(--line);
+  border-radius:var(--radius); overflow:hidden;
+  transition:transform .3s cubic-bezier(.2,.7,.3,1), box-shadow .3s, border-color .3s;
+  animation:rise .6s cubic-bezier(.2,.7,.3,1) both;
+  animation-delay:calc(var(--d) * 70ms + 120ms);
+}
+.card:hover { transform:translateY(-5px); box-shadow:var(--shadow); border-color:var(--gold-soft); }
+.sheet {
+  background:
+    linear-gradient(160deg, color-mix(in srgb, var(--ink) 8%, var(--paper)) 0%, var(--paper) 55%);
+  padding:1.5rem 1.5rem 0; position:relative; overflow:hidden;
+}
+.sheet::after {
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:linear-gradient(to bottom, transparent 62%, var(--surface));
+}
+.sheet img {
+  display:block; width:100%; height:auto; border-radius:6px 6px 0 0;
+  border:1px solid var(--line); border-bottom:0;
+  box-shadow:0 12px 26px -14px rgba(20,32,40,.4);
+  transition:transform .35s cubic-bezier(.2,.7,.3,1);
+}
+.card:hover .sheet img { transform:translateY(-4px) scale(1.015); }
+.card-body { padding:1.1rem 1.35rem 0; flex:1; }
+.card-body h3 {
+  font-family:var(--serif); font-weight:600; font-size:1.22rem; line-height:1.18;
+  margin:.35rem 0 .5rem; color:var(--ink); text-wrap:balance;
+}
+.desc { font-size:.9rem; color:var(--soft); line-height:1.55; }
+.tags { display:flex; flex-wrap:wrap; gap:.4rem; margin:.9rem 0 0; }
+.tag {
+  font-size:.68rem; letter-spacing:.06em; text-transform:uppercase; font-weight:600;
+  color:var(--ink-2); background:color-mix(in srgb, var(--sage) 34%, transparent);
+  padding:.28rem .55rem; border-radius:6px;
+}
+.dl {
+  margin:1.2rem 1.35rem 1.35rem; padding:.8rem 1rem;
+  display:inline-flex; align-items:center; justify-content:center; gap:.55rem;
+  font:inherit; font-weight:600; font-size:.9rem; text-decoration:none;
+  color:var(--paper); background:var(--gold);
+  border-radius:9px; transition:background .2s, transform .12s; cursor:pointer;
+}
+.dl:hover { background:var(--ink); }
+.dl:active { transform:scale(.98); }
+.dl svg { width:17px; height:17px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+.dl .ext {
+  font-size:.62rem; letter-spacing:.1em; padding:.12rem .38rem; border-radius:4px;
+  background:rgba(255,255,255,.22);
+}
+.empty { text-align:center; color:var(--soft); padding:3rem 1rem; display:none; }
+.empty.show { display:block; }
+.empty b { color:var(--ink); }
+
+/* ---------- FAQ ---------- */
+.faq { background:var(--surface); border-top:1px solid var(--line); margin-top:2.5rem; }
+.faq-in { max-width:820px; margin:0 auto; padding:clamp(2.8rem,5vw,4rem) clamp(1.2rem,5vw,2rem); }
+.faq-head { text-align:center; margin-bottom:2.2rem; }
+.faq-head h2 {
+  font-family:var(--serif); font-weight:600; font-size:clamp(1.7rem,3.4vw,2.4rem);
+  margin:.5rem 0 0; color:var(--ink); text-wrap:balance;
+}
+.faq-head p { color:var(--soft); margin:.6rem auto 0; max-width:52ch; }
+.faq-item { border-bottom:1px solid var(--line); }
+.faq-q {
+  width:100%; text-align:left; background:none; border:0; cursor:pointer;
+  font:inherit; font-weight:600; font-size:1.04rem; color:var(--ink);
+  padding:1.25rem 0; display:flex; align-items:center; justify-content:space-between; gap:1.5rem;
+}
+.faq-q:hover { color:var(--gold); }
+.faq-q svg { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; transition:transform .3s; color:var(--gold); }
+.faq-q[aria-expanded="true"] svg { transform:rotate(180deg); }
+.faq-a { overflow:hidden; max-height:0; transition:max-height .35s ease; }
+.faq-a p { padding:0 0 1.35rem; color:var(--soft); max-width:64ch; line-height:1.65; }
+
+/* ---------- FOOTER ---------- */
+.foot {
+  background:var(--hero-bg2); color:var(--hero-soft);
+  padding:2.6rem clamp(1.2rem,5vw,3rem);
+}
+.foot-in { max-width:1120px; margin:0 auto; display:flex; flex-wrap:wrap; gap:1.4rem 2rem; align-items:center; justify-content:space-between; }
+.foot .wm-txt b { color:var(--hero-ink); }
+.foot-note { font-size:.78rem; max-width:46ch; line-height:1.6; }
+.foot a { color:var(--gold-soft); text-decoration:none; }
+.foot a:hover { text-decoration:underline; }
+
+:focus-visible { outline:2px solid var(--gold); outline-offset:3px; border-radius:4px; }
+
+/* ---------- WhatsApp ---------- */
+.wa-fab {
+  position:fixed; right:clamp(14px,4vw,26px); bottom:clamp(14px,4vw,26px); z-index:60;
+  display:inline-flex; align-items:center; gap:.55rem;
+  background:#25D366; color:#fff; text-decoration:none; font-weight:600; font-size:.95rem;
+  padding:.85rem 1.25rem; border-radius:999px;
+  box-shadow:0 12px 30px -8px rgba(37,211,102,.6), 0 4px 14px rgba(0,0,0,.2);
+  transition:transform .2s, box-shadow .2s;
+}
+.wa-fab:hover { transform:translateY(-3px); box-shadow:0 16px 36px -8px rgba(37,211,102,.7), 0 6px 16px rgba(0,0,0,.24); }
+.wa-fab svg { width:24px; height:24px; fill:currentColor; flex-shrink:0; }
+.faq-cta { text-align:center; margin-top:2.4rem; }
+.faq-cta p { color:var(--soft); margin:0 0 1.05rem; }
+.faq-cta a {
+  display:inline-flex; align-items:center; gap:.6rem;
+  background:#25D366; color:#fff; text-decoration:none; font-weight:600; font-size:1rem;
+  padding:.9rem 1.6rem; border-radius:999px; transition:transform .15s, filter .2s;
+  box-shadow:0 10px 24px -10px rgba(37,211,102,.55);
+}
+.faq-cta a:hover { transform:translateY(-2px); filter:brightness(1.04); }
+.faq-cta svg { width:21px; height:21px; fill:currentColor; }
+
+@keyframes rise { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:none; } }
+@media (prefers-reduced-motion: reduce) {
+  * { animation:none !important; transition:none !important; }
+  html { scroll-behavior:auto; }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width:620px) {
+  .brandbar { margin-bottom:1.9rem; }
+  .hero { padding-left:1.15rem; padding-right:1.15rem; }
+  .hero h1 { max-width:100%; }
+  .thesis { font-size:1rem; }
+  .controls-in { flex-direction:column; align-items:stretch; gap:.85rem; padding:.9rem 0; }
+  .search { flex-basis:auto; }
+  .chips {
+    flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch;
+    scrollbar-width:none; margin:0 -1.15rem; padding:0 1.15rem;
+  }
+  .chips::-webkit-scrollbar { display:none; }
+  .chip { white-space:nowrap; flex-shrink:0; }
+  .grid { gap:1.15rem; }
+  .faq-q { font-size:.98rem; gap:1rem; }
+  .foot-in { flex-direction:column; align-items:flex-start; gap:1rem; }
+  .foot { padding-bottom:6.5rem; }
+  .wa-fab { padding:.9rem; }
+  .wa-fab .wa-label { display:none; }
+}
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="brandbar">
+      <div class="wordmark">
+        <img class="logo" src="./assets/logo_gold.png" alt="Loose Law Group — ili">
+        <span class="rule"></span>
+        <div class="wm-txt"><b>Uilian Loose</b><span>Loose Law Group</span></div>
+      </div>
+      <button class="theme-btn" id="themeBtn" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+    <div class="hero-inner">
+      <p class="eyebrow hero-eyebrow">Profilaxia Jurídica · Cirurgia Vascular</p>
+      <h1>Termos de consentimento que <em>protegem</em> quem cuida.</h1>
+      <p class="thesis">Modelos-mestre de Termo de Consentimento Livre e Esclarecido (TCLE), revisados juridicamente pelo escritório. Encontre o procedimento, leia do que se trata e baixe o documento pronto para personalizar.</p>
+      <div class="hero-meta">
+        <span><b>5</b> termos disponíveis</span>
+        <span class="dot"></span>
+        <span>Especialidade <b>Vascular / Flebologia</b></span>
+        <span class="dot"></span>
+        <span>Advocacia Especialista em Defesa Médica</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="controls-in">
+      <label class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="q" type="search" placeholder="Buscar termo… (ex.: escleroterapia, laser, varizes)" autocomplete="off" aria-label="Buscar termo">
+      </label>
+      <div class="chips" id="chips"><button class="chip is-active" data-f="all">Todos</button><button class="chip" data-f="Laser">Laser</button><button class="chip" data-f="Cirúrgico">Cirúrgico</button><button class="chip" data-f="Escleroterapia">Escleroterapia</button></div>
+    </div>
+  </div>
+
+  <section class="grid-sec">
+    <p class="count" id="count"></p>
+    <div class="grid" id="grid">
+      <article class="card" data-cat="Laser" data-search="ablação por laser endovenoso varizes tronculares e tributárias tratamento minimamente invasivo: por uma punção, uma fibra de laser é introduzida na veia doente e a energia térmica a fecha por dentro, redirecionando o sangue para vasos sadios. laser minimamente invasivo" style="--d:0">
+        <div class="sheet">
+          <img loading="lazy" src="./thumbs/thumb1.jpg" alt="Primeira página do termo: Ablação por laser endovenoso">
+        </div>
+        <div class="card-body">
+          <p class="eyebrow">Varizes tronculares e tributárias</p>
+          <h3>Ablação por laser endovenoso</h3>
+          <p class="desc">Tratamento minimamente invasivo: por uma punção, uma fibra de laser é introduzida na veia doente e a energia térmica a fecha por dentro, redirecionando o sangue para vasos sadios.</p>
+          <div class="tags"><span class="tag">Laser</span><span class="tag">Minimamente invasivo</span></div>
+        </div>
+        <a class="dl" download="TCLE - Ablacao laser endovenoso.pdf" href="./termos/TCLE%20-%20Ablacao%20laser%20endovenoso.pdf">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v10m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+          Baixar termo <span class="ext">PDF</span>
+        </a>
+      </article>
+      <article class="card" data-cat="Cirúrgico" data-search="cirurgia de varizes (flebectomia) doença varicosa dos membros inferiores remoção cirúrgica dos segmentos de veia dilatados pelo refluxo — flebectomia e microflebectomia —, a abordagem clássica para varizes já estabelecidas. cirúrgico" style="--d:1">
+        <div class="sheet">
+          <img loading="lazy" src="./thumbs/thumb2.jpg" alt="Primeira página do termo: Cirurgia de varizes (flebectomia)">
+        </div>
+        <div class="card-body">
+          <p class="eyebrow">Doença varicosa dos membros inferiores</p>
+          <h3>Cirurgia de varizes (flebectomia)</h3>
+          <p class="desc">Remoção cirúrgica dos segmentos de veia dilatados pelo refluxo — flebectomia e microflebectomia —, a abordagem clássica para varizes já estabelecidas.</p>
+          <div class="tags"><span class="tag">Cirúrgico</span></div>
+        </div>
+        <a class="dl" download="TCLE - Cirurgia de varizes (flebectomia).pdf" href="./termos/TCLE%20-%20Cirurgia%20de%20varizes%20%28flebectomia%29.pdf">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v10m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+          Baixar termo <span class="ext">PDF</span>
+        </a>
+      </article>
+      <article class="card" data-cat="Escleroterapia" data-search="escleroterapia por espuma guiada por ultrassom aplicação, com agulha fina guiada por ultrassom, de uma espuma esclerosante (polidocanol) que irrita a parede do vaso doente, levando à sua obstrução e absorção pelo organismo. escleroterapia ultrassom" style="--d:2">
+        <div class="sheet">
+          <img loading="lazy" src="./thumbs/thumb3.jpg" alt="Primeira página do termo: Escleroterapia por espuma">
+        </div>
+        <div class="card-body">
+          <p class="eyebrow">Guiada por ultrassom</p>
+          <h3>Escleroterapia por espuma</h3>
+          <p class="desc">Aplicação, com agulha fina guiada por ultrassom, de uma espuma esclerosante (polidocanol) que irrita a parede do vaso doente, levando à sua obstrução e absorção pelo organismo.</p>
+          <div class="tags"><span class="tag">Escleroterapia</span><span class="tag">Ultrassom</span></div>
+        </div>
+        <a class="dl" download="TCLE - Escleroterapia por espuma .pdf" href="./termos/TCLE%20-%20Escleroterapia%20por%20espuma%20.pdf">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v10m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+          Baixar termo <span class="ext">PDF</span>
+        </a>
+      </article>
+      <article class="card" data-cat="Escleroterapia" data-search="escleroterapia por glicose vasos e microvarizes injeção de solução esclerosante (glicose, polidocanol ou combinação) nos vasos indesejados; a irritação da parede provoca o fechamento e o desaparecimento gradual do vaso. escleroterapia" style="--d:3">
+        <div class="sheet">
+          <img loading="lazy" src="./thumbs/thumb4.jpg" alt="Primeira página do termo: Escleroterapia por glicose">
+        </div>
+        <div class="card-body">
+          <p class="eyebrow">Vasos e microvarizes</p>
+          <h3>Escleroterapia por glicose</h3>
+          <p class="desc">Injeção de solução esclerosante (glicose, polidocanol ou combinação) nos vasos indesejados; a irritação da parede provoca o fechamento e o desaparecimento gradual do vaso.</p>
+          <div class="tags"><span class="tag">Escleroterapia</span></div>
+        </div>
+        <a class="dl" download="TCLE - Escleroterapia por glicose .pdf" href="./termos/TCLE%20-%20Escleroterapia%20por%20glicose%20.pdf">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v10m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+          Baixar termo <span class="ext">PDF</span>
+        </a>
+      </article>
+      <article class="card" data-cat="Laser" data-search="laser nd:yag + escleroterapia telangiectasias e vasos nutridores combina o laser transdérmico nd:yag sobre os vasinhos com a escleroterapia das veias nutridoras — energia térmica e injeção atuando juntas nas telangiectasias. laser escleroterapia" style="--d:4">
+        <div class="sheet">
+          <img loading="lazy" src="./thumbs/thumb5.jpg" alt="Primeira página do termo: Laser Nd:YAG + escleroterapia">
+        </div>
+        <div class="card-body">
+          <p class="eyebrow">Telangiectasias e vasos nutridores</p>
+          <h3>Laser Nd:YAG + escleroterapia</h3>
+          <p class="desc">Combina o laser transdérmico Nd:YAG sobre os vasinhos com a escleroterapia das veias nutridoras — energia térmica e injeção atuando juntas nas telangiectasias.</p>
+          <div class="tags"><span class="tag">Laser</span><span class="tag">Escleroterapia</span></div>
+        </div>
+        <a class="dl" download="TCLE - Laser associado escleroterapia glicose.pdf" href="./termos/TCLE%20-%20Laser%20associado%20escleroterapia%20glicose.pdf">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v10m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+          Baixar termo <span class="ext">PDF</span>
+        </a>
+      </article>
+    </div>
+    <div class="empty" id="empty">Nenhum termo encontrado para <b id="term"></b>. Tente outra palavra.</div>
+  </section>
+
+  <section class="faq">
+    <div class="faq-in">
+      <div class="faq-head">
+        <p class="eyebrow" style="color:var(--gold)">Dúvidas frequentes</p>
+        <h2>Sobre o uso dos termos de consentimento</h2>
+        <p>Orientações gerais do escritório. Cada caso concreto deve ser avaliado individualmente — em caso de dúvida, fale com a equipe.</p>
+      </div>
+      <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>O que é um TCLE e por que ele me protege juridicamente?</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a"><p>O Termo de Consentimento Livre e Esclarecido é o registro de que o paciente foi informado sobre o procedimento, seus riscos, alternativas e limitações — e concordou de forma consciente. Ele é a principal prova documental de que o dever de informação foi cumprido, deslocando para o campo do esperado aquilo que, sem o termo, poderia ser lido como surpresa ou falha.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Posso usar o termo exatamente como está?</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a"><p>Os modelos são a base técnica revisada juridicamente, mas devem ser personalizados a cada caso: dados do paciente, particularidades clínicas discutidas na consulta e eventuais restrições combinadas. O termo acompanha — não substitui — a conversa individualizada com o paciente.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>O termo substitui a explicação verbal na consulta?</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a"><p>Não. O consentimento é um processo, não apenas uma assinatura. O documento formaliza e comprova a orientação, mas a explicação minuciosa, com espaço para dúvidas, continua sendo indispensável e é justamente o que dá validade ao termo.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>O TCLE pode ser assinado digitalmente?</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a"><p>Sim. A assinatura eletrônica com trilha de auditoria (data, hora, identificação e integridade do documento) é válida e, em muitos aspectos, mais robusta que a assinatura em papel. Veja o material de Apresentação de Assinatura Digital do escritório.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>E se o paciente se recusar a assinar?</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a"><p>A recusa deve ser respeitada e registrada. Documente em prontuário que a orientação foi prestada e que o paciente optou por não assinar — a recusa em assinar não autoriza, por si só, a realização do procedimento sem o devido esclarecimento.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Por quanto tempo devo guardar o termo assinado?</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a"><p>Recomenda-se manter o termo, junto ao prontuário, por no mínimo 20 anos após o último atendimento, prazo alinhado às normas de guarda de prontuário e aos prazos de responsabilização. Preserve tanto o documento quanto a evidência da assinatura.</p></div>
+      </div>
+      </div>
+      <div class="faq-cta">
+        <p>Não encontrou sua dúvida? Fale direto com a assessoria do escritório.</p>
+        <a href="https://wa.me/5551991691851?text=Ol%C3%A1%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20os%20Termos%20de%20Consentimento%20%28Profilaxia%20Jur%C3%ADdica%29%20do%20escrit%C3%B3rio." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.01 3.2C9 3.2 3.3 8.9 3.3 15.9c0 2.5.7 4.8 1.9 6.8L3.2 28.8l6.3-1.9c1.9 1.1 4.1 1.7 6.5 1.7 7 0 12.7-5.7 12.7-12.7S23 3.2 16.01 3.2zm0 23.1c-2.1 0-4-.6-5.7-1.6l-.4-.2-3.7 1 1-3.6-.3-.4a10.4 10.4 0 0 1-1.6-5.6c0-5.8 4.7-10.5 10.5-10.5 5.8 0 10.5 4.7 10.5 10.5s-4.9 10.4-10.3 10.4zm5.8-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.4-.6.1-.2.1-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8 0 1.7 1.2 3.3 1.4 3.5.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg> Tirar dúvidas no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="foot-in">
+      <div class="wordmark">
+        <img class="logo" src="./assets/logo_gold.png" alt="Loose Law Group — ili">
+        <span class="rule"></span>
+        <div class="wm-txt"><b>Uilian Loose</b><span>OAB/RS 112.328 · OAB/RJ 264.685</span></div>
+      </div>
+      <p class="foot-note">Profilaxia Jurídica — Loose Law Group. Os modelos são base técnica e não substituem a orientação individualizada ao paciente. <a href="https://www.uilianloose.com.br">www.uilianloose.com.br</a></p>
+    </div>
+  </footer>
+
+  <a class="wa-fab" href="https://wa.me/5551991691851?text=Ol%C3%A1%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20os%20Termos%20de%20Consentimento%20%28Profilaxia%20Jur%C3%ADdica%29%20do%20escrit%C3%B3rio." target="_blank" rel="noopener" aria-label="Tirar dúvidas no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.01 3.2C9 3.2 3.3 8.9 3.3 15.9c0 2.5.7 4.8 1.9 6.8L3.2 28.8l6.3-1.9c1.9 1.1 4.1 1.7 6.5 1.7 7 0 12.7-5.7 12.7-12.7S23 3.2 16.01 3.2zm0 23.1c-2.1 0-4-.6-5.7-1.6l-.4-.2-3.7 1 1-3.6-.3-.4a10.4 10.4 0 0 1-1.6-5.6c0-5.8 4.7-10.5 10.5-10.5 5.8 0 10.5 4.7 10.5 10.5s-4.9 10.4-10.3 10.4zm5.8-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.4-.6.1-.2.1-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.8 0 1.7 1.2 3.3 1.4 3.5.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg><span class="wa-label">Dúvidas?</span>
+  </a>
+</div>
+
+<script>
+(function() {
+  var root = document.documentElement;
+  // ---- theme toggle ----
+  var btn = document.getElementById('themeBtn');
+  var icon = document.getElementById('themeIcon');
+  var moon = '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
+  var sun = '<circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
+  function prefersDark() { return window.matchMedia('(prefers-color-scheme: dark)').matches; }
+  function isDark() { var t = root.getAttribute('data-theme'); return t ? t === 'dark' : prefersDark(); }
+  function paint() { icon.innerHTML = isDark() ? sun : moon; }
+  btn.addEventListener('click', function() {
+    root.setAttribute('data-theme', isDark() ? 'light' : 'dark');
+    paint();
+  });
+  paint();
+
+  // ---- search + filter ----
+  var q = document.getElementById('q');
+  var chips = document.getElementById('chips');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var count = document.getElementById('count');
+  var empty = document.getElementById('empty');
+  var termEl = document.getElementById('term');
+  var filter = 'all';
+
+  function norm(s) {
+    return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+  function apply() {
+    var term = norm(q.value.trim());
+    var shown = 0;
+    cards.forEach(function(c) {
+      var okCat = filter === 'all' || c.getAttribute('data-cat') === filter;
+      var okTxt = !term || norm(c.getAttribute('data-search')).indexOf(term) !== -1;
+      var show = okCat && okTxt;
+      c.style.display = show ? '' : 'none';
+      if (show) shown++;
+    });
+    count.innerHTML = '<b>' + shown + '</b> de ' + cards.length + ' termos';
+    empty.classList.toggle('show', shown === 0);
+    termEl.textContent = q.value.trim();
+  }
+  q.addEventListener('input', apply);
+  chips.addEventListener('click', function(e) {
+    var b = e.target.closest('.chip');
+    if (!b) return;
+    filter = b.getAttribute('data-f');
+    chips.querySelectorAll('.chip').forEach(function(x) { x.classList.toggle('is-active', x === b); });
+    apply();
+  });
+  apply();
+
+  // ---- faq accordion ----
+  document.querySelectorAll('.faq-q').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      var a = btn.nextElementSibling;
+      btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+      a.style.maxHeight = open ? '0' : (a.scrollHeight + 'px');
+    });
+  });
+})();
+</script>

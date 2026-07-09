@@ -1,0 +1,11 @@
+:80 {
+	root * /srv
+	file_server
+	encode gzip zstd
+	@estaticos path *.pdf *.jpg *.jpeg *.png *.css *.js *.woff2
+	header @estaticos Cache-Control "public, max-age=604800"
+	header {
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+	}
+}
